@@ -1,6 +1,8 @@
 :root {
+    --color_fondo_general: rgb(4, 11, 53);
     --color_de_arriba: rgb(4, 17, 94);
     --footer-color: -webkit-linear-gradient(left, rgba(32, 175, 227, 1) 0%, rgba(32, 175, 227, 1) 0%, rgba(13, 85, 227, 1) 49%, rgba(5, 1, 84, 1) 100%);
+    --color_descripcion: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -22,6 +24,10 @@ h1 {
 
 .container {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .imagen {
@@ -46,6 +52,7 @@ h1 {
     font-size: 20px;
     border-radius: 5px;
     overflow: hidden;
+    background-color: var(--color_descripcion);
 }
 
 .siguiente {
@@ -70,13 +77,25 @@ h1 {
     background: rgba(0, 0, 0, 0.4);
 }
 
+.descripcion_imagen_container {
+    text-align: center;
+    padding: 2px 16px;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--color_fondo_general);
+}
+
 .total_imagenes {
     display: flex;
     flex-wrap: wrap;
 }
 
 .columna_imagen {
-    width: 16.66%;
+    width: 16.0%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 4px;
 }
 
 .demo {

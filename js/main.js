@@ -16,6 +16,7 @@ function mostrarImagenes(numero_imagen) {
     var i;
     var imagenes = document.getElementsByClassName("imagen");
     var dots = document.getElementsByClassName("demo");
+    var descripcion = document.getElementById("descripcion_imagen");
 
     if (numero_imagen > imagenes.length) {
         contadorImagen = 1
@@ -35,4 +36,5 @@ function mostrarImagenes(numero_imagen) {
 
     imagenes[contadorImagen - 1].style.display = "block";
     dots[contadorImagen - 1].className += " primer_plano";
+    descripcion.innerHTML = dots[contadorImagen - 1].alt;
 }
