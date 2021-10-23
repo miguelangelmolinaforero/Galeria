@@ -24,7 +24,7 @@ h1 {
 
 .container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
@@ -89,6 +89,7 @@ h1 {
 .total_imagenes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .columna_imagen {
